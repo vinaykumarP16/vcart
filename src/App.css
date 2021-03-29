@@ -1,0 +1,188 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: consolas;
+}
+
+body{
+  background: #64A8E6;
+}
+
+
+.App{
+  text-align: center;
+  min-height: 100vh;
+  display: grid;
+}
+
+.App .logo{
+  color:#555;
+  background: #fff;
+  padding: 10px;
+  font-size: 3rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.logo:hover{
+  background: red;
+  color: #fff;
+  letter-spacing: 15px;
+}
+
+.asses{
+  //border: 5px solid red;
+  border-radius: 2%;
+  margin: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #77BBA7;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.items{
+  margin: 10px;
+  border: 2px solid #555;
+  background: #fff;
+  width: 270px;
+  height: 325px;
+}
+
+.items img{
+  width: 200px;
+  height: 200px;
+}
+
+
+img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:10px auto;
+  width: 200px;
+  height: 200px;
+  transition: 2s;
+}
+
+img:hover{
+  
+  transform: translate3d(40px,10px,10px);
+}
+
+
+.App h2{
+  margin: 10px;
+  transition: 2s;
+  animation: vin 2s infinite;
+}
+
+
+
+
+@keyframes vin {
+  0%{
+    transform: translateY(-10px);
+  }
+  50%{
+    color: #fff;
+  }
+  100%{
+    color: red;
+  }
+}
+
+.asses ul{
+  list-style: none;
+  color: #BA318B;
+}
+
+.laptop{
+  letter-spacing: 2px;
+  //border: 5px solid blue;
+  margin: 20px;
+  background: #FDFD00;
+  text-transform: uppercase;
+    display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.laptop h2{
+  color: #fff;
+  animation: vin 2s infinite;
+}
+
+.laptop h3{
+  margin: 10px;
+  color: #0A0445;
+}
+
+.phone{
+  letter-spacing: 2px;
+  //border: 5px solid green;
+  margin: 20px;
+  background: #DED9F7;
+  text-transform: uppercase;
+    display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.phone h2{
+  margin: 10px;
+  color: #fff;
+  animation: vin 3s infinite;
+}
+
+
+.phone ul{
+  list-style: none;
+  color: #504756;
+}
+
+item{
+  background: #FFF;
+}
+
+item,button{
+  padding: 5px;
+  border:none;
+  margin: 3px;
+  color: blue;
+  font-size: 15px;
+  background:grey;
+  transition: 0.2s;
+}
+
+item,button:hover{
+  color: #fff;
+  font-size: 17px;
+  background:blue; 
+}
+
+@media (max-width: 500px) {
+  .App{
+    align-items: center;
+    justify-content:center;
+  }
+
+  .asses,.laptop,.phone{
+    display: grid;
+  }
+  
+}
+
+@media (max-width: 720px) {
+  .App{
+    align-items: center;
+    justify-content:center;
+  }
+
+  .asses,.laptop,.phone{
+    display: grid;
+  }
+  
+}
